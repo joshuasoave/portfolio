@@ -22,7 +22,6 @@
     <script src="./js/app.js"></script>
   </head>
   <body>
-    <div class="container">
       <header>
         <a id="menu-icon" href="#" data-target="slide-out" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
         <h3 class="header-text">My Portfolio</h3>
@@ -46,7 +45,7 @@
 
       <main class="row">
         <div class="col s12">
-          <div class="container">
+          <div>
             <div class="row">
               <div class="col s12 m6">
                 <div class="card hoverable">
@@ -56,12 +55,18 @@
                     </div>
                   </a>
                   <div class="card-content">
-                    <h4>Rüfus Museum</h4>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
+                    <h4>The Rüfus Museum</h4>
+                    <p>Made with Create React App, this virtual museum allows users to learn from the comfort of their own home. Guests can explore the museum or create an account to add exhibits to their favorite's list! </p>
                   </div>
+                  <ul class="tabs tabs-fixed-width">
+                    <li class="tab"><a class="black-text text-darken-3">React</a></li>
+                    <li class="tab"><a class="black-text text-darken-3">Mongo DB</a></li>
+                    <li class="tab"><a class="black-text text-darken-3">Node.js</a></li>
+                    <li class="tab"><a class="black-text text-darken-3">Express</a></li>
+                  </ul>
                   <div class="card-action">
-                    <a href="https://rufus-museum.herokuapp.com/" target="_blank">Visit the Rüfus Museum</a>
+                    <a href="https://rufus-museum.herokuapp.com/" target="_blank" class="black-text text-lighen-2">Visit the Rüfus Museum</a>
+                    <a href="https://github.com/joshuasoave/final-project" target="_blank"><img class="project-icon" src="./img/GitHub-Mark-32px.png"/></a>
                   </div>
                 </div>
               </div>
@@ -73,15 +78,25 @@
                     </div>
                   </a>
                   <div class="card-content">
-                    <h4>20 Wonders</h4>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
+                    <h4>20 Wonders of 2020</h4>
+                    <p>This project is a campaign to select 13 new world wonders. Users must create an account to participate in the campaign. Without signing in, users still have access to learn about the current 7 wonders.</p>
+                  </div>
+                  <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width">
+                      <li class="tab"><a class="purple-text text-darken-3">Mongo DB</a></li>
+                      <li class="tab"><a class="purple-text text-darken-3">Node.js</a></li>
+                      <li class="tab"><a class="purple-text text-darken-3">Bootstrap</a></li>
+                      <li class="tab"><a class="purple-text text-darken-3">Express</a></li>
+                    </ul>
                   </div>
                   <div class="card-action">
                     <a href="https://gentle-badlands-23571.herokuapp.com/" target="_blank">Vote for your favorite</a>
+                    <a href="https://github.com/joshuasoave/7wonders" target="_blank"><img class="project-icon" src="./img/GitHub-Mark-32px.png"/></a>
                   </div>
                 </div>
               </div>
+            </div>
+          </div class="row">
               <div class="col s12">
                 <div class="card hoverable">
                   <a href="https://v-o-y-a-g-e-u-r-s.herokuapp.com/" target="_blank">
@@ -91,17 +106,26 @@
                   </a>
                   <div class="card-content">
                     <h4>Voyageurs</h4>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
+                    <p>Voyageurs is a single page web application that is used to organize National Parks that the user would like to visit or has already visited. Users can add information about each park, such as an image, location, and description, and set a priority from high to low.</p>
+                  </div>
+                  <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width">
+                      <li class="tab"><a class="light-blue-text text-darken-4">MongoDB</a></li>
+                      <li class="tab"><a class="light-blue-text text-darken-4">Node.js</a></li>
+                      <li class="tab"><a class="light-blue-text text-darken-4">Angular</a></li>
+                      <li class="tab"><a class="light-blue-text text-darken-4">Express</a></li>
+                    </ul>
                   </div>
                   <div class="card-action">
-                    <a href="https://v-o-y-a-g-e-u-r-s.herokuapp.com/" target="_blank">Add parks to your list</a>
+                    <a href="https://v-o-y-a-g-e-u-r-s.herokuapp.com/" target="_blank" class="yellow-text text-darken-2">Add parks to your list</a>
+                    <a href="https://github.com/joshuasoave/national-parks" target="_blank"><img class="project-icon" src="./img/GitHub-Mark-32px.png"/></a>
                   </div>
                 </div>
               </div>
+          </div>
 
             </div>
-            <div class="row center-align">
+            <div class="row">
               <div class="col s12 m6">
                 <div class="card hoverable">
                   <a href="https://joshuasoave.github.io/pokemon" target="_blank">
@@ -111,11 +135,19 @@
                   </a>
                   <div class="card-content">
                     <h4>Who's That Pokemon?</h4>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
+                    <p>A quiz game that generates a random Pokemon number and gets that sprite image from the pokeAPI. It then checks to see if the user's input is the correct Pokemon name or not.</p>
+                  </div>
+                  <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width">
+                      <li class="tab"><a class="yellow-text text-accent-4">Javascript</a></li>
+                      <li class="tab"><a class="yellow-text text-accent-4">REST API</a></li>
+                      <li class="tab"><a class="yellow-text text-accent-4">CSS</a></li>
+                      <li class="tab"><a class="yellow-text text-accent-4">HTML</a></li>
+                    </ul>
                   </div>
                   <div class="card-action">
-                    <a href="https://joshuasoave.github.io/pokemon" target="_blank">Test your knowledge</a>
+                    <a href="https://joshuasoave.github.io/pokemon" target="_blank" class="indigo-text text-accent-4">Take the quiz</a>
+                    <a href="https://github.com/joshuasoave/joshuasoave.github.io" target="_blank"><img class="project-icon" src="./img/GitHub-Mark-32px.png"/></a>
                   </div>
                 </div>
               </div>
@@ -128,11 +160,19 @@
                   </a>
                   <div class="card-content">
                     <h4>AJ's Adoption Agency</h4>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
+                    <p>AJ's Adoption Agency is a single page web application that helps match users with the right pet for them. It was built with a React frontend and PHP/SQL backend.</p>
+                  </div>
+                  <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width">
+                      <li class="tab"><a class="cyan-text text-darken-2">Postgres</a></li>
+                      <li class="tab"><a class="cyan-text text-darken-2">SQL</a></li>
+                      <li class="tab"><a class="cyan-text text-darken-2">React</a></li>
+                      <li class="tab"><a class="cyan-text text-darken-2">PHP</a></li>
+                    </ul>
                   </div>
                   <div class="card-action">
-                    <a href="https://sheltered-springs-99330.herokuapp.com/" target="_blank">Adopt an animal</a>
+                    <a href="https://sheltered-springs-99330.herokuapp.com/" target="_blank" class="pink-text text-accent-2">Adopt an animal</a>
+                    <a href="https://github.com/gustylocuras/project_4" target="_blank"><img class="project-icon" src="./img/GitHub-Mark-32px.png"/></a>
                   </div>
                 </div>
               </div>
@@ -141,7 +181,12 @@
         </div>
       </main>
 
-      <footer>
+      <footer class="page-footer">
+        <div class="container">
+          <p>Josh Soave</p>
+          <a href="https://github.com/joshuasoave?tab=repositories" target="_blank"><img src="./img/GitHub-Mark-32px.png"/></a>
+          <a href="https://www.linkedin.com/in/joshua-soave/" target="_blank"><img src="./img/LI-In-Bug.png"/></a>
+        </div>
       </footer>
 
 
