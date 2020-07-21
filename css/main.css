@@ -42,9 +42,13 @@ header img {
   margin: .5em;
 }
 
-.header-text {
+#home-header {
   margin-top: 2em;
-  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.header-text {
+
+  font-family: 'Rowdies', sans-serif;
 }
 
 /* SIDE NAV  */
@@ -59,6 +63,11 @@ nav {
 
 /* main */
 main {
-  margin-top: 4em;
-  font-family: 'Noto Sans JP', sans-serif;
+  width: 80%;
+  margin-top: 2em;
+  font-family: 'Noto Sans JP', sans-serif
+}
+
+@@media query {
+
 }
