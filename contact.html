@@ -15,19 +15,35 @@
     crossorigin="anonymous"></script>
     <!--Materialize-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
      <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/main.css">
+    <!--Email -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("user_kwDrnlGIyb7EGtUQjmeK3");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate the contact number value
+            this.contact_number.value = Math.random() * 100000 | 0;
+            emailjs.sendForm('contact_service', 'contact_form', this);
+        });
+      }
+    </script>
     <!--My JS -->
     <script src="./js/app.js"></script>
   </head>
   <body>
-    <div class="container">
+    <div>
       <header>
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <h1>Contact Me</h1>
+        <a id="menu-icon" href="#" data-target="slide-out" class="sidenav-trigger"><i class="small material-icons">menu</i></a>
+        <h3 class="header-text">Contact Me</h3>
       </header>
         <nav class="hide-on-med-and-down">
           <ul>
@@ -45,12 +61,47 @@
           <li class="nav-item"><a href="./contact.html">Contact</a></li>
         </ul>
 
-        <main>
+        <main class="container">
+          <h4 class="contact">I'd love to hear from you!</h4>
+          <h5 class="contact">Leave your contact info and I'll be in touch.</h5>
+          <div class="row">
+            <form class="col s12" id="contact-form" method="post">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="first_name" type="text" class="validate" name="first_name">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="last_name" type="text" class="validate" name="last_name">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate" name="user_email">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="message" type="text" name="message" class="validate">
+                  <label for="message">Message</label>
+                </div>
+              </div>
+              <button class="btn waves-effect waves-light" type="submit" name="action">Send
+                <i class="material-icons right">send</i>
+              </button>
+            </form>
+          </div>
         </main>
 
-        <footer>
+        <footer class="page-footer">
+          <div class="container">
+            <p>Josh Soave</p>
+            <a href="https://github.com/joshuasoave?tab=repositories" target="_blank"><img src="./img/GitHub-Mark-32px.png"/></a>
+            <a href="https://www.linkedin.com/in/joshua-soave/" target="_blank"><img src="./img/LI-In-Bug.png"/></a>
+          </div>
         </footer>
-
 
     </div>
   </body>
