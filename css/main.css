@@ -92,9 +92,19 @@ main {
 /*//////////////*/
 /*contact page */
 /*/////////////*/
+.contact {
+  font-family: 'Rowdies', sans-serif;
+}
+
 #submit {
   position: absolute;
   right: 5%;
+}
+
+form {
+  font-size: 22px;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 /*//////////////*/
