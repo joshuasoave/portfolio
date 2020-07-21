@@ -26,8 +26,8 @@
 
 #menu-icon {
   position: absolute;
-  left: 1.5%;
-  top: 1.5%;
+  left: 2%;
+  top: 1%;
   color: black;
   font-weight: 800;
 }
@@ -52,6 +52,14 @@ header img, footer img {
 
 .header-text {
   font-family: 'Rowdies', sans-serif;
+}
+
+#home-list {
+  margin-top: 5em;
+}
+
+#home-list a {
+  font-size: 32px;
 }
 
 /* SIDE NAV  */
@@ -140,6 +148,7 @@ form {
 .page-footer {
   background: rgba(0,0,0,.2);
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .page-footer p {
