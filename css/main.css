@@ -26,8 +26,8 @@
 
 #menu-icon {
   position: absolute;
-  left: 1.5%;
-  top: 1.5%;
+  left: 2%;
+  top: 1%;
   color: black;
   font-weight: 800;
 }
@@ -54,6 +54,14 @@ header img, footer img {
   font-family: 'Rowdies', sans-serif;
 }
 
+#home-list {
+  margin-top: 5em;
+}
+
+#home-list a {
+  font-size: 32px;
+}
+
 /* SIDE NAV  */
 
 /*//////////////*/
@@ -76,7 +84,7 @@ main {
 /*home page*/
 /*/////////////*/
 .home-text {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Red Rose', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,8 +93,16 @@ main {
   margin-right: auto;
 }
 
-#home-main-small {
-  margin-top: 7em;
+
+#home-med h4 {
+  font-size: 38px;
+}
+
+#home-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 
@@ -132,10 +148,23 @@ form {
 .page-footer {
   background: rgba(0,0,0,.2);
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .page-footer p {
   color: black;
   font-family: 'Rowdies', sans-serif;
-  font-size: 18px;
+  font-size: 26px;
+}
+
+/*///////////
+//Desktop////
+///////////*/
+
+@media only screen and (min-width: 900px) {
+  #home-header {
+    background-position: center;
+    background-attachment: fixed;
+  }
+
 }
