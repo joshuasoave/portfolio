@@ -9,10 +9,10 @@
 
 /* Home header */
 
-#home-header {
+.header-img {
   background-image: url("https://i.imgur.com/jx1gCw4.jpg");
   width: 100%;
-  height: 350px;
+  height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -110,6 +110,10 @@ main {
 /*projects page*/
 /*/////////////*/
 
+#my-portfolio {
+  margin-top: 1.3em;
+}
+
 .project-icon {
   position: absolute;
   height: 25px;
@@ -127,6 +131,10 @@ main {
 /*/////////////*/
 .contact {
   font-family: 'Rowdies', sans-serif;
+}
+
+#get-in-touch {
+  margin-top: 1.5em;
 }
 
 #submit {
@@ -162,7 +170,7 @@ form {
 ///////////*/
 
 @media only screen and (min-width: 900px) {
-  #home-header {
+  .header-img {
     background-position: center;
     background-attachment: fixed;
     background-image: url("https://i.imgur.com/Gjyd4sX.jpg");
