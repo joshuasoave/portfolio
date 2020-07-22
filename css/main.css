@@ -12,7 +12,7 @@
 .header-img {
   background-image: url("https://i.imgur.com/jx1gCw4.jpg");
   width: 100%;
-  height: 300px;
+  height: 280px;
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -105,13 +105,21 @@ main {
   text-align: center;
 }
 
+/*//////////////*/
+/*about page */
+/*/////////////*/
+
+.about-text {
+  font-family: 'Red Rose', sans-serif;
+  font-size: 18px;
+}
 
 /*//////////////*/
 /*projects page*/
 /*/////////////*/
 
 #my-portfolio {
-  margin-top: 1.3em;
+  margin-top: 1em;
 }
 
 .project-icon {
@@ -163,6 +171,10 @@ form {
   color: black;
   font-family: 'Rowdies', sans-serif;
   font-size: 26px;
+}
+
+#resume {
+  font-size: 18px;
 }
 
 /*///////////

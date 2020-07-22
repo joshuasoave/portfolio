@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>About Josh Soave</title>
     <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Rowdies&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&family=Rowdies&display=swap" rel="stylesheet">
     <!--Icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--JQUERy-->
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <!--My JS -->
     <script src="./js/app.js"></script>
+    <script src="./js/carousel.js" charset="utf-8"></script>
   </head>
   <body>
     <div>
@@ -58,8 +59,33 @@
       </ul>
 
       <main class="container">
-        <h3>About Me</h3>
-        <p>I recently made a major career transition into software engineering.</p>
+        <div class="row">
+          <h3 class="header-text center" id="my-portfolio">About me</h3>
+        </div>
+        <div class="row">
+            <p class="center about-text">Coming up with creative solutions on the fly is my specialty. I recently made a major career transition into Software Engineering after years of working in the travel industry. I believe the key to innovative projects is collaboration. I've loved solving problems and enjoy working on projects with others.</p>
+        </div>
+        <div class="row">
+          <div class="col s12 m6">
+            <img src="https://i.imgur.com/UFMiZ23.jpg" alt="a picture of me at the grand canyon" class="responsive-img circle"/>
+          </div>
+          <div class="col s12 m6">
+            <p class="center about-text">In my time at General Assembly's Software Engineering Immersive, I discovered a passion for developing software with Javascript. From building REST APIs and accessing data from databases in Node.js to responsive mobile applications in React, I love the language for it's versatility. I really enjoy making responsive designs that look great on mobile devices. If you haven't already, take a look at the projects I've built in my portfolio!</p>
+            <br/>
+
+          </div>
+        </div>
+          <div class="row">
+            <p class="center about-text"> In case you're wondering why the name Rufus pops up so much in my projects, he is my boyfriend's dog and I love him so much. Take a look at Rufus being cute below!</p>
+            <div class="carousel">
+              <a class="carousel-item" href="#one!"><img src="https://i.imgur.com/LRQVAxq.jpg"></a>
+              <a class="carousel-item" href="#two!"><img src="https://i.imgur.com/LiIr03o.jpg"></a>
+              <a class="carousel-item" href="#three!"><img src="https://i.imgur.com/8G692io.jpg"></a>
+              <a class="carousel-item" href="#four!"><img src="https://i.imgur.com/9XxWWW7.jpg"></a>
+              <a class="carousel-item" href="#five!"><img src="https://i.imgur.com/7jHX9Sy.jpg"></a>
+            </div>
+          </div>
+        </div>
       </main>
 
       <footer class="page-footer">
