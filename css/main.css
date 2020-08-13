@@ -134,6 +134,10 @@ main {
   margin-right: auto;
 }
 
+.card-tabs a {
+  font-size: 22px;
+}
+
 /*//////////////*/
 /*contact page */
 /*/////////////*/
