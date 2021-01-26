@@ -138,6 +138,13 @@ main {
   font-size: 22px;
 }
 
+#top-row, #top-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 /*//////////////*/
 /*contact page */
 /*/////////////*/
