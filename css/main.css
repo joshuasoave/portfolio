@@ -122,6 +122,11 @@ main {
   margin-top: 1em;
 }
 
+.mobile-screen {
+  height: 540px !important;
+  object-fit: cover;
+}
+
 .project-icon {
   position: absolute;
   height: 25px;
@@ -132,6 +137,10 @@ main {
 .card {
   margin-left: auto;
   margin-right: auto;
+}
+
+.card-content {
+  height: 196px !important;
 }
 
 .card-tabs a {
